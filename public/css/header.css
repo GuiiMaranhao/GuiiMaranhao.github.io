@@ -1,0 +1,130 @@
+/* === NAVBAR === */
+
+header.navbar {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 0;
+}
+
+header.navbar .container {
+    max-width: 1152px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header.navbar .container .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+header.navbar .container .menu-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header.navbar .container .menu-section .navbar-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header.navbar .container .menu-section .navbar-body  img{
+    display: none;
+    opacity: 0;
+}
+
+header.navbar .container .menu-section .navbar-body  h1{
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    margin-left: 48px;
+    text-transform: uppercase;
+}
+
+header.navbar .menu-section .navbar-body input {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 40px;
+    width: 100%;
+    padding: 8px 32px;
+    color: white;
+    outline: none;
+    width: 100%;
+    margin: 0 80px;
+    text-transform: uppercase;
+}
+
+header.navbar .menu-section .navbar-body input::placeholder {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+header.navbar .menu-section .navbar-body button {
+    font-weight: 600;
+}
+
+
+/* === NAVBAR ACTIVE === */
+
+header.navbar .container .menu-section.active {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+    z-index: 10;
+    transition: all 0.9ms linear;
+}
+
+header.navbar .container .menu-section.active .navbar-body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 100px 20px;
+    transition-duration: 0.3ms;
+}
+
+header.navbar .container .menu-section.active .navbar-body img {
+    margin-bottom: 50px;
+    display: initial;
+    opacity: 1;
+}
+
+header.navbar .container .menu-section.active .navbar-body h1 {
+    display: none;
+    opacity: 0;
+}
+
+header.navbar .container .menu-section.active .navbar-body button{
+    width: 100%;
+    margin-top: 16px;
+}
+
+
+/* === NAVBAR BURGUER ACTIVE === */
+
+header.navbar .container .menu-section.active .menu-toggle {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+header.navbar .container .menu-section.active .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+header.navbar .container .menu-section.active .menu-toggle .two {
+    opacity: 0;
+}
+
+header.navbar .container .menu-section.active .menu-toggle .three {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
