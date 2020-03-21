@@ -24,6 +24,17 @@
     div.buttons-group span {
         display: none;
     }
+
+    footer .footer-white .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer .footer-white .links a + a {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 780px) {
@@ -76,6 +87,7 @@
     aside {
         order: -1;
         min-width: 100%;
+        margin-left: 0;
     }
 
     div.card {
@@ -83,4 +95,45 @@
       margin: 0;
       margin-bottom: 16px;
     }
+
+    
+    footer .footer-dark .container,
+    footer .footer-white .container {
+        max-width: 980px;
+        width: 60%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer .footer-white .footer-white-start {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer .footer-white .footer-white-start img {
+        margin-bottom: 16px;
+    }
+
+    footer .footer-white .footer-white-start .footer-white-start-number {
+        margin-left: 0px;
+        margin-bottom: 16px;
+    }
+
+    footer .footer-white .links a + a {
+        margin-top: 8px;
+    }
+
+    footer .footer-dark .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-dark .links a + a {
+        margin: 8px 0 24px;
+    }
+
 }

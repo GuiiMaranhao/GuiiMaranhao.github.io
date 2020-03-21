@@ -45,7 +45,6 @@ div.card-body.active {
     opacity: 1;
     height: 100%;
     display: block;
-    transition: all 0.9s linear;
 }
 
 div.check-group {

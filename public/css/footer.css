@@ -1,0 +1,62 @@
+footer {
+    margin-top: 32px;
+}
+
+footer .footer-dark .container,
+footer .footer-white .container {
+    max-width: 980px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-white {
+    background-color: white;
+    padding: 12px;
+}
+
+footer .footer-white .footer-white-start {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-white .footer-white-start .footer-white-start-number {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    margin-left: 40px;
+    font-weight: 300;
+}
+
+footer .footer-white .links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+footer .footer-white .links a + a {
+   margin-left: 48px;
+}
+
+footer .footer-dark {
+    background-color: #484848;
+    color: white;
+    padding: 12px;
+}
+
+footer .footer-dark .links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+footer .footer-dark .links a + a {
+    margin-left: 48px;
+}
+
+footer .footer-dark .icons-redes a + a {
+    margin-left: 8px;
+}
+
