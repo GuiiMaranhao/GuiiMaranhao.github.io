@@ -2,10 +2,10 @@
 
 let menuShow = true;
 
-const menuSection = document.querySelector(".menu-section")
-const menuToggle = document.querySelector(".menu-toggle")
+const menuSection = document.querySelector(".navbar-end")
+const menuBurguer = document.querySelector(".navbar-burguer")
 
-menuToggle.addEventListener("click", () => {
+menuBurguer.addEventListener("click", () => {
     document.body.style.overflow = menuShow ? "hidden" : "initial"
     menuSection.classList.toggle("active", menuShow)
     menuShow = !menuShow;
@@ -26,8 +26,25 @@ cardAction.addEventListener("click", () => {
     cardAction.querySelector("span").innerText = cardShow ? "OCULTAR" : "MOSTRAR" 
 
     cardShow = !cardShow
-
-
-
-
 })
+
+
+// ===  BUTTON TOP ===
+
+mybutton = document.querySelector(".button-top")
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+mybutton.addEventListener("click", () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})
+

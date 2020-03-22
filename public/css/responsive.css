@@ -47,25 +47,26 @@
         justify-content: space-between;
     }
 
-    header.navbar .container .menu-section  {
+    header.navbar .container .navbar-end  {
         justify-content: flex-end;
     }
 
-    header.navbar .container .menu-section .navbar-body  {
+    header.navbar .container .navbar-end .navbar-body  {
         display: none;
     }
 
-    div.menu-toggle  {
+    div.navbar-burguer {
         width: 35px;
         height: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        cursor: pointer;
     }
 
-    div.menu-toggle .one, 
-    div.menu-toggle .two, 
-    div.menu-toggle .three {
+    div.navbar-burguer .one, 
+    div.navbar-burguer .two, 
+    div.navbar-burguer .three {
         background-color: white;
         height: 4px;
         width: 100%;

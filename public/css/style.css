@@ -104,3 +104,20 @@ main div.container {
 aside {
     margin-left: 16px;
 }
+
+.button-top {
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    color: white;
+    background-color: #ADADAD;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    display: none;
+}
+
+.button-top:hover {
+    background-color: #9A9A9A;
+}

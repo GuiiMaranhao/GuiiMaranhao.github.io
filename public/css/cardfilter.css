@@ -41,12 +41,6 @@ div.card-body {
     display: none;
 }
 
-div.card-body.active {
-    opacity: 1;
-    height: 100%;
-    display: block;
-}
-
 div.check-group {
     margin-bottom: 24px;
 }
@@ -78,3 +72,12 @@ div.buttons-group span {
     font-weight: bold;
     text-transform: uppercase;
 } 
+
+
+/* === CARD ACTIVE === */
+
+div.card-body.active {
+    opacity: 1;
+    height: 100%;
+    display: block;
+}
