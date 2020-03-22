@@ -62,6 +62,8 @@ buttonClearFilter.addEventListener("click", () => {
   for (n = 0; n < optionsSections.length; n++) {
     optionsSections[n].style.display = 'block'
   }
+
+  document.documentElement.scrollTop = 0;
 })
 
 

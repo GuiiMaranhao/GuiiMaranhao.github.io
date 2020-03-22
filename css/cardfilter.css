@@ -46,13 +46,16 @@ div.check-group {
 }
 
 div.check-group label {
-    margin-left: 16px;
     color: rgb(102, 102, 102);
+    cursor: pointer;
 }
 
-div.check-group input {
-  height: 1;
-  width: 1;
+div.check-group label:hover {
+    color: rgb(40, 40, 40);
+}
+
+div.check-group label input {
+    margin-right: 16px;
 }
 
 div.buttons-group {
